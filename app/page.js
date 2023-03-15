@@ -3,7 +3,7 @@ import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World }
 import '../styles/global.css'
 
 const Page = () => (
-  <div>
+  <div className="bg-gray-800 overflow-hidden">
     <Navbar />
     <Hero />
     <About />
