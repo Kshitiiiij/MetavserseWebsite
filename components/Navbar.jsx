@@ -25,7 +25,6 @@ const Navbar = () => (
       />
 
     </div>
-    navbar
   </motion.nav>
 );
 
