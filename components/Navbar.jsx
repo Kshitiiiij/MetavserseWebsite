@@ -1,6 +1,5 @@
 'use client';
 import { motion } from 'framer-motion'
-import styles from '../styles/'
 import { navVariants } from '@/utils/motion';
 
 const Navbar = () => (
@@ -8,10 +7,10 @@ const Navbar = () => (
     variants={navVariants}
     initial='hidden'
     whileInView='show'
-    className={`${styles.xPaddings} py-8 relative`}
+    className='xPaddings py-8 relative'
   >
     <div className='absolute w-[50%] inset-0 gradient-01' />
-    <div className={`${styles.innerWidth} px-5 mx-auto flex justify-between gap-8`}>
+    <div className='innerWidth mx-auto flex justify-between gap-8'>
       <img
         src='/search.svg'
         alt='search'

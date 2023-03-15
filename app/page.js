@@ -1,6 +1,6 @@
 import { Footer, Navbar } from '../components';
 import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
-import '../styles/global.css'
+
 
 const Page = () => (
   <div className="bg-gray-800 overflow-hidden">
