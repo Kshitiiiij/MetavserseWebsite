@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { slideIn, staggerContainer, textVariant } from '@/utils/motion';
 
 const Hero = () => (
-  <section className='yPaddings sm:pl-16 pl-6'>
+  <section className='mt-6 sm:pl-16 pl-6'>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -11,7 +11,7 @@ const Hero = () => (
       viewport={{ once: false, amount: 0.25 }}
     className='innerWidth mx-auto flex flex-col'
     >
-      <div className={`flex justify-center items-center flex-col relative z-10`}>
+      <div className='flex justify-center items-center flex-col relative z-10 sm:mb-1 mb-6 '>
         <motion.h1
         className='heroheading'
           variants={textVariant(1.1)}
@@ -29,14 +29,14 @@ const Hero = () => (
       </div>
       <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
-        className='relative w-full md:-mt-[20px] -mt-[12px]'
+        className='relative w-full md:-mt-[20px] -mt-[12px] -top-[40px] '
       >
-        <div className='absolute w-full h-[100px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]' />
+        {/* <div className='absolute w-full h-[100px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]' /> */}
           <img src="/cover.png" alt="cover"
-            className='w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10'
+            className='w-full sm:h-[430px] h-[300px] object-cover rounded-tl-[140px] z-10'
           />
           <a href="#explore">
-            <div className="w-full flex justify-end sm:-mt-[50px] -mt-[70px] pr-[40px] relative z-10">
+            <div className="w-full flex justify-end sm:-mt-[60px] -mt-[80px] pr-[40px] relative z-10">
               <img src="/stamp.png" alt="stamp" className='sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain' />
             </div> 
           </a>
