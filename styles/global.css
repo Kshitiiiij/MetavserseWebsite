@@ -117,7 +117,7 @@
     @apply: lg:w-[80%] w-[100%]
   }
   .paddings{
-    @apply sm:p-16 xs:p-8 px-6 py-12
+    @apply sm:p-16 px-6 py-12
   }
   .yPaddings {
     @apply sm:py-16 py-12
